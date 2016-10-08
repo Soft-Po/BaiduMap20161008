@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <EditText 
+            android:id="@+id/editText_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="北京"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="市搜索:"/>
+        
+        <EditText 
+            android:id="@+id/editText_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        
+        <Button 
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="查找"/>
+        
+        <Button 
+            android:id="@+id/button_nextPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="click"
+            android:text="下一页"/>
+    </LinearLayout>
+    
+    <fragment 
+        android:id="@+id/fragment_poisearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.baidu.mapapi.map.SupportMapFragment"/>
+    
+
+</LinearLayout>

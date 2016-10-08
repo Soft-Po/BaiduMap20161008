@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BaiduMap20161008</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_add_overlay">AddOverlayActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+</resources>

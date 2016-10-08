@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button 
+        android:id="@+id/button_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="基础地图"
+        android:onClick="click"/>
+    
+    <Button 
+        android:id="@+id/button_addOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加覆盖物"
+        android:layout_below="@+id/button_base"
+        android:layout_marginTop="10dp"
+        android:onClick="click"/>
+    
+    <Button 
+        android:id="@+id/button_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地图定位"
+        android:layout_below="@+id/button_addOverlay"
+        android:layout_marginTop="10dp"
+        android:onClick="click"/>
+    
+    <Button 
+        android:id="@+id/button_poiSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poi检索"
+        android:layout_below="@+id/button_location"
+        android:layout_marginTop="10dp"
+        android:onClick="click"/>
+    
+     <Button 
+        android:id="@+id/button_routePlan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线路规划"
+        android:layout_below="@+id/button_poiSearch"
+        android:layout_marginTop="10dp"
+        android:onClick="click"/>
+
+</RelativeLayout>
